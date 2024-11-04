@@ -17,12 +17,12 @@ class ConversorApp:
         self.monto_entry.grid(row=0, column=1, sticky=tk.W)
         # Moneda de origen
         ttk.Label(self.frame, text="De:").grid(row=1, column=0, sticky=tk.W)
-        self.origen_combo = ttk.Combobox(self.frame, values=['USD', 'EUR', 'JPY'], width=10)
+        self.origen_combo = ttk.Combobox(self.frame, values=['USD', 'EUR', 'JPY', 'PEN'], width=10)
         self.origen_combo.grid(row=1, column=1, sticky=tk.W)
         self.origen_combo.current(0)
         # Moneda de destino
         ttk.Label(self.frame, text="A:").grid(row=2, column=0, sticky=tk.W)
-        self.destino_combo = ttk.Combobox(self.frame, values=['USD', 'EUR', 'JPY'], width=10)
+        self.destino_combo = ttk.Combobox(self.frame, values=['USD', 'EUR', 'JPY', 'PEN'], width=10)
         self.destino_combo.grid(row=2, column=1, sticky=tk.W)
         self.destino_combo.current(1)
         # Botón de conversión
